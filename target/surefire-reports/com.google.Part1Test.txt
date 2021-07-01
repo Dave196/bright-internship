@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: com.google.Part1Test
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.058 s <<< FAILURE! - in com.google.Part1Test
+com.google.Part1Test.testShowPlaying  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Currently playing: Amazing Cats (amazing_cats_video_id) [#cat #animal]"
+     but: was "Currently playing: Amazing Cats (amazing_cats_video_id) [#cat, #animal]"
+	at com.google.Part1Test.testShowPlaying(Part1Test.java:141)
+
+com.google.Part1Test.testPauseVideoShowVideo  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Currently playing: Amazing Cats (amazing_cats_video_id) [#cat #animal] - PAUSED"
+     but: was "Currently playing: Amazing Cats (amazing_cats_video_id) [#cat, #animal] - PAUSED"
+	at com.google.Part1Test.testPauseVideoShowVideo(Part1Test.java:173)
+
+com.google.Part1Test.testShowAllVideos  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string containing "Amazing Cats (amazing_cats_video_id) [#cat #animal]"
+     but: was "Another Cat Video (another_cat_video_id) [#cat, #animal]"
+	at com.google.Part1Test.testShowAllVideos(Part1Test.java:32)
+
